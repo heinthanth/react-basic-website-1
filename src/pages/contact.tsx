@@ -16,8 +16,8 @@ export default function ContactPage() {
           HR Department<br/>
           Human Resources<br />
           Anytown, USA 12345<br />
-          <a href="tel:1234567890">(123) 456-7890</a><br />
-          <a href="mailto:hr@example.com">hr@example.com</a>
+          <a href="tel:1234561234">(123) 456-1234</a><br />
+          <a href="mailto:hr.department@example.com">hr.department@example.com</a>
         </p>
       </div>
     </div>
