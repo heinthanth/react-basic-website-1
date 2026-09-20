@@ -1,0 +1,89 @@
+.navbar {
+  height: 5rem;
+}
+
+.navbar .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+}
+
+.navbar .desktop-nav {
+  display: none;
+
+  @media (min-width: 48rem) {
+    display: block;
+  }
+}
+
+.navbar .hamburger-button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media (min-width: 48rem) {
+    display: none;
+  }
+}
+
+.navbar nav ul, .mobile-nav ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  column-gap: 1rem;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  display: none;
+}
+
+body[data-theme="dark"] .mobile-nav {
+  background-color: #1e1e2e;
+}
+
+.mobile-nav[data-open="true"] {
+  display: flex;
+}
+
+.mobile-nav ul {
+  flex-direction: column;
+  row-gap: 1rem;
+  text-align: center;
+}
+
+.mobile-nav .mobile-nav-close-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar .theme-toggle-button {
+  border: 0;
+  background-color: transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

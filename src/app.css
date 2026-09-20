@@ -1,0 +1,54 @@
+@import "@fontsource/poppins";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body[data-theme="dark"] {
+  background-color: #1e1e2e;
+  color: #f0f0f0;
+}
+
+a, button {
+  color: black;
+}
+
+body[data-theme="dark"] a, body[data-theme="dark"] button {
+  color: white;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  /* 48rem = 768px */
+  @media (min-width: 48rem) {
+    max-width: 48rem; /* 768px */
+  }
+
+  /* 64rem = 1024px */
+  @media (min-width: 64rem) {
+    max-width: 64rem; /* 1024px */
+  }
+
+  /* 80rem = 1280px */
+  @media (min-width: 80rem) {
+    max-width: 80rem; /* 1280px */
+  }
+
+  /* 96rem = 1536px */
+  @media (min-width: 96rem) {
+    max-width: 96rem; /* 1536px */
+  }
+}
